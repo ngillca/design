@@ -4,25 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./assets/nglogo.png">
   <link rel="stylesheet" href="./css/styles.css">
   <script type="text/javascript" src="./js/index.js" defer></script>
   <!-- animation asset source: https://codepen.io/Gorin1603/pen/mgzQdg -->
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js" defer></script>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js" defer></script>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js" defer></script>
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>NG | Transform your online presence</title>
 </head>
 <body>
 
   <!-- Navbar section -->
   <header>  
-    <nav class="nav active">
-      <h1 id="logo">NG</h1>
+    <nav class="nav active fade-in-header">
+      <div id="logo"><h1>NG</h1><p>artifact</p></div>
+      
       <ul class="nav-menu">
-        <a href="#" class="nav__link nav-link">About</a>
-        <a href="#" class="nav__link nav-link">Services</a>
-        <a href="#" class="nav__link nav-link">Contact</a>
+        <a href="#about" class="nav__link nav-link">About</a>
+        <a href="#services" class="nav__link nav-link">Services</a>
+        
+        <a href="#portfolio" class="nav__link nav-link">Portfolio</a>
+        
+        
       </ul>
       <div class="hamburger">
         <span class="bar"></span>
@@ -33,7 +38,7 @@
   </header>
 
   <!-- Landing section -->
-  <div class="container demo">
+  <div class="container demo fade-in-header2">
     <div class="content">
       <div id="large-header" class="large-header">
         <canvas id="demo-canvas"></canvas>
@@ -42,12 +47,101 @@
     </div>
   </div>
 
-  <!-- Content section -->
+   <!--Start next section scrolling text banner-->
+ 
+
+
+   <section>
+    <div id="scroll-container">
+      <div id="scroll-text"><div>
+    </div>
+  </section>
+
   <section>
+    <div id="scroll-container2">
+      <div id="scroll-text2"><div>
+    </div>
+  </section>
+  <!-- Content section -->
+  <!-- <section>
     <div class="content-container">
       <div class="mass-text"></div>
     </div>
+  </section> -->
+
+<!-- Start new section about -->
+
+
+   <!--Start next section portfolio -->
+   <section id="about" class="about">
+    <div class="about-logo">
+      <img class="fade-in" src="./assets/aboutimg.png" alt="">
+      <h1>Hi I'm Natalia</h1>
+      <p>I code, design - and I'm passionate about helping people use technology for growth in an ethical.</p>
+    </div>    
   </section>
+
+ <!-- Start section and scroll animation-->
+  <section id="services" class="services">
+    <h1 id="services-header">Services</h1>
+    <div class="columns">
+      
+      <!--Inner divs-->
+      <div class="col fade-in">
+        <h3>Graphic Design</h3>
+        <p>From captivating logos, eye-catching social media graphics and meticulous UI; bring your vision to life.</p>
+        <a href="">Learn more</a>
+      </div>
+
+      <div class="col fade-in">
+        <h3>Brand Identity</h3>
+        <p>Crafting visual stories that define your brand's essence - discover the power of identity.</p> 
+        <a href="">Learn more</a>
+      </div>
+
+      <div class="col fade-in">
+        <h3>Media</h3>
+        <p>Ignite your digital presence with a variety of high-impact content solutions.</p>
+        <a href="">Learn more</a>
+      </div>
+      <!-- End inner divs-->
+    </div>
+  </section>
+ 
+
+
+  <section id="portfolio" class="portfolio">
+    <h1 id="plogo">Portfolio</h1>
+    <div class="inner-portfolio">
+      <div class="left-box">
+        <h3 class="fade-in">Guardify</h3>
+        <p class="fade-in"><i class="fa-brands fa-nfc-directional"></i></p>
+       
+      </div>
   
+      <div class="right-box">
+        <h3 class="fade-in">Promptly</h3>
+        <p class="fade-in"><i class="fa-solid fa-terminal"></i></p>
+      </div>
+      <div class="left-box">
+        <h3 class="fade-in">Tranquility Tickets</h3>
+        <p class="fade-in"><i class="fa-solid fa-ticket"></i></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a class="fade-in" href="https://www.linkedin.com/in/natalia-gill-a0681a11a/" target=”_blank”><i class="fa-brands fa-linkedin"></i></a>
+    <a class="fade-in" href="https://www.linkedin.com/in/natalia-gill-a0681a11a/" target=”_blank”><i class="fa-brands fa-instagram"></i></a>
+    <div class="fade-in" id="logo-footer"><h1>NG</h1><p>artifact</p></div>
+    <a class="fade-in" href="https://www.linkedin.com/in/natalia-gill-a0681a11a/" target=”_blank”><i class="fa-brands fa-square-behance"></i></a>
+    <a class="fade-in" href="https://www.linkedin.com/in/natalia-gill-a0681a11a/" target=”_blank”><i class="fa-brands fa-square-dribbble"></i></a>
+  </footer>
+
+
+
+  
+ 
 </body>
 </html>
