@@ -512,8 +512,11 @@ header * {
 }
 
 /* Media queries, even smaller screens */
-/* @media only screen and (max-width: 768px) {
-} */
+@media only screen and (max-width: 500px) {
+  #g-id {
+    display: none;
+  }
+}
 /* Media queries, even smaller screens */
 @media only screen and (max-width: 768px) {
   .demo .main-title {
@@ -526,14 +529,6 @@ header * {
   }
   .columns {
     flex-direction: column;
-  }
-
-  #guardify-link {
-    font-size: 1rem;
-  }
-
-  #guardify {
-    font-size: 1.7rem;
   }
 
   .main-title {
