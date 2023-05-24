@@ -290,6 +290,15 @@ header * {
   animation: my-animation2 17s linear infinite;
 }
 
+#guardify-link {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: rgb(255, 201, 139);
+}
+
+#guardify {
+  font-size: 2rem;
+}
 /* for Firefox */
 /* @-moz-keyframes my-animation {
   from {
@@ -414,14 +423,19 @@ header * {
 .left-box,
 .right-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px;
   border: 1px solid rgb(255, 201, 139);
+  gap: 2rem;
 }
 
 .left-box h3,
 .right-box h3 {
   font-size: 2rem;
+}
+.left-box p,
+.right-box p {
+  font-size: 1.3rem;
 }
 
 .left-box i,
